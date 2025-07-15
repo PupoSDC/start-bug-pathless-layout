@@ -5,6 +5,9 @@ import { NotFound } from './components/NotFound'
 
 export function createRouter() {
   const router = createTanStackRouter({
+    context: {
+      variable: "",
+    },
     routeTree,
     defaultPreload: 'intent',
     defaultErrorComponent: DefaultCatchBoundary,
